@@ -1,0 +1,49 @@
+databaseChangeLog:
+- changeSet:
+    id: 1520978027917-1
+    author: gonzalo (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: id
+            type: BIGINT
+        - column:
+            constraints:
+              nullable: false
+            name: brand
+            type: VARCHAR(255)
+        - column:
+            defaultValueComputed: CURRENT_TIMESTAMP
+            name: created_at
+            type: TIMESTAMP WITHOUT TIME ZONE
+        - column:
+            constraints:
+              nullable: false
+            name: id_car
+            type: BIGINT
+        - column:
+            constraints:
+              nullable: false
+            name: id_user
+            type: BIGINT
+        - column:
+            name: is_default
+            type: BOOLEAN
+        - column:
+            constraints:
+              nullable: false
+            name: model
+            type: VARCHAR(255)
+        tableName: Car
+- changeSet:
+    id: 1520978027917-2
+    author: gonzalo (generated)
+    changes:
+    - addPrimaryKey:
+        columnNames: id
+        constraintName: CarPK
+        tableName: Car
+
