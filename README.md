@@ -1,5 +1,5 @@
 # Spring Boot Springfox custom json at swagger-ui
-This microservice manages the cards data
+This microservice manages the cars data
 
 ## Configuration
 * Install [Lombok](https://projectlombok.org/) to erase repetitive code. This is mostly for the IDE.
